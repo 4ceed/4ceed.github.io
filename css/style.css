@@ -1,0 +1,71 @@
+.jumbotron {
+    background-image: url("/images/bg3.jpg");
+    background-repeat: no-repeat;
+    color:white;
+    background-color:#0d61a1;
+    height:320px;
+}
+
+.navbar-brand {
+	font-color:white;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+.icons_pad {
+	margin-top:50px;
+}
+
+.navbar-header {
+	text-align: center;
+}
+
+.navbar-brand {
+	float:none;
+}
+
+.navbar-custom1 .nav > li > a:focus,
+.navbar-custom1 .nav > li > a:hover,
+.navbar-custom1 .nav > li.active > a {
+  background-color: #11bb11;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #394145;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+h5 {
+	font-weight:bold;
+	font-style: italic;
+	color:#004466;
+}
+
+.videoWrapperOuter {
+  max-width:640px; 
+  margin-left:auto;
+  margin-right:auto;
+}
+.videoWrapperInner {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 50%;
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapperInner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
