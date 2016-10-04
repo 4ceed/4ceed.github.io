@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>T2C2</title>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="jquery-ui/css/jquery-ui.css">		
+  		<link rel="stylesheet" href="css/style.css">		
+
+ 		<!--[if lt IE 9]>
+		  <script src="bootstrap/js/html5shiv.min.js"></script>
+		  <script src="bootstrap/js/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+	<div class="header clearfix">
+		<nav class="navbar navbar-inverse navbar-custom1">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+			   	<a href="index.html" class="" ><img src="images/atom_white.png" height="40" style="margin-top:5px;"></a> 
+	 		</div>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li class="active"><a href="index.html">About</a></li>
+		      <li><a href="demo.html">Demo</a></li>
+		      <li><a href="docs.html">Docs</a></li>
+		      <li><a href="mailto:stevek@illinois.edu"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+		    </ul>
+		  </div>
+		</nav>
+	</div>
+
+	<div class="container">
+		<br />
+		<h3>4CeeD Uploader FAQ</h3>
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingOne">
+					<h4 class="panel-title">
+						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">OverView</a>
+					</h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+						<p><b>What is this?</b><br />
+							The 4CeeD uploader is a light weight web tool used to upload scientific data files and metadata descriptors to a local repository. 
+						</p>
+
+						<p><b>Why use this? </b><br />
+							The 4CeeD uploader and curator replace outdated and inefficient methodologies used in many laboratories for data capture and storage.</p>		   
+
+						<p><b>How can the 4CeeD Uploader help me?</b><br />
+						<ul>
+							<li>Data gets stored to local cloud storage.</li>
+							<li>Support for automating repetitive tasks. </li>
+							<li>Use templates for reliable user defined meta data entry.</li>
+						</ul>
+						<p><b>How can the 4CeeD Curator help me?</b><br />
+						<ul>
+							<li>All accessible data can be downloaded with its data-model hierarchy preserved. </li>
+							<li>Extractors pull descriptive metadata out of files and instrument logs for analysis and discovery. </li>
+							<li>Get reliable calibration data and how to reference it. </li>
+							<li>Share your data and use powerful free-text and faceted search for comparisons. </li>
+							<li>Broad set of customizable access control rules. </li>
+						</ul>					
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingTwo">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Collections
+						</a>
+					</h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					<div class="panel-body">
+
+						<div data-toggle="collapse" data-target="#collection">
+							<b><u>What’s a collection?</u></b>
+						</div>
+
+						<div id="collection" class="collapse out"> 
+							A collection is a term used to describe a group of datasets. Collections are often named after a sample, project, or process.
+						</div>
+						<hr />
+						<div data-toggle="collapse" data-target="#create-new-collection">
+							<b><u>Create a new collection</u></b>
+						</div>
+						<div id="create-new-collection" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Create a new root collection" data-html="true" data-trigger="hover" data-content="1. Give your collection a name. <br />2. Give your collection a description.<br />3. Click the create collection button.<br /><br /> <i> A new root level collection is created.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/new_collection.png" class="img-responsive"></p>
+						</div>	 
+						<hr />
+						<div data-toggle="collapse" data-target="#collection-new">
+							<b><u>Select an existing collection</u></b>
+						</div>
+						<div id="collection-new" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Select an existing collection" data-html="true" data-trigger="hover" data-content="1. Select a root or sub collection<br />2. (Optional) Enter text to search for collections. <br />3. (Optional) Create a new sub collection by right clicking the parent. <br /><br /> <i> A parent collection is selected or a new sub collection is created and selected.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/existing_collection.png" class="img-responsive"></p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThree">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							Datasets
+						</a>
+					</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="panel-body">
+
+						<div data-toggle="collapse" data-target="#dataset">
+							<b><u>What’s a dataset?</u></b>
+						</div>
+
+						<div id="dataset" class="collapse out"> 
+							A dataset is a term used to describe a group of related files that have metadata. 
+						</div>
+						<hr />
+						<div data-toggle="collapse" data-target="#select-dataset">
+							<b><u>Select an existing dataset</u></b>
+						</div>
+						<div id="select-dataset" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>					
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Select an existing dataset" data-html="true" data-trigger="hover" data-content="1. Select an available dataset from the dropdown menu. <br /><br /> <i> A dataset is selected.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/existing_datasets.png" class="img-responsive"></p>
+						</div>	
+						<hr />
+						<div data-toggle="collapse" data-target="#basic-dataset">
+							<b><u>Create a basic dataset</u></b>
+						</div>
+						<div id="basic-dataset" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Create a basic dataset" data-html="true" data-trigger="hover" data-content="1. Give your dataset a name. <br />2. Enter your meta data in the dataset description.<br />3. Click the create dataset button.<br /><br /> <i> A new dataset is created.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/new_dataset.png" class="img-responsive"></p>
+						</div>	
+						<hr />
+						<div data-toggle="collapse" data-target="#create-dataset">
+							<b><u>Create a dataset from a template</u></b>
+						</div>
+						<div id="create-dataset" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Create a dataset from a template" data-html="true" data-trigger="hover" data-content="1. Select a template from the dropdown menu. <br />2. Give your dataset a name.<br /> 3. Enter values for your datasets labels. <br />4. Click the create dataset button.<br /> 5. (Optional) Add or remove additional key/value pairs to extend your dataset template. <br /><br /> <i> A new dataset is created from your templates key/value data.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/load_template.png" class="img-responsive"></p>
+						</div>						
+						<hr />
+						<div data-toggle="collapse" data-target="#create-template">
+							<b><u>Create a new template</u></b>
+						</div>
+						<div id="create-template" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Create a template" data-html="true" data-trigger="hover" data-content="1. (Optional) Use an existing template to design your new template. <br />2. Give your template a name.<br />3. Add new fields to your template. <br /> 4. Click create template button. <br /> 5. (Future) Assign default values and measurement types<br /><br /><i> A new dataset template is created.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/create_template.png" class="img-responsive"></p>
+						</div>	
+						<hr />
+						<div data-toggle="collapse" data-target="#previous-dataset">
+							<b><u>Load a previous dataset</u></b>
+						</div>
+						<div id="previous-dataset" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Load a previous dataset" data-html="true" data-trigger="hover" data-content="1. Use a previous dataset to build a new dataset. <br />2. Give your new dataset a name.<br />3. Optionally add new fields to your template. <br /> 4. Click create dataset button. <br /><i> A new dataset template is created.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/previous_dataset.png" class="img-responsive"></p>
+						</div>					
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingFiles">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFiles" aria-expanded="false" aria-controls="collapseFiles">
+							Files
+						</a>
+					</h4>
+				</div>
+				<div id="collapseFiles" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFiles">
+					<div class="panel-body">
+
+						<div data-toggle="collapse" data-target="#fileQuestion1">
+							<b><u>What file types can I upload?</u></b>
+						</div>
+
+						<div id="fileQuestion1" class="collapse out"> 
+							All major file types are supported, but metadata extractors will only run on supported file types<br />
+							For example, [.png, .dm3, .tif, .txt, .jpg]
+						</div>
+						<hr />
+
+						<div data-toggle="collapse" data-target="#fileQuestion2">
+							<b><u>What are file extractors?</u></b>
+						</div>
+
+						<div id="fileQuestion2" class="collapse out"> 
+							File extractors work by extracting key and value pairs from supported file types. This information is indexed, archived, and available for download and search.<br />
+						</div>
+						<hr />
+
+						<div data-toggle="collapse" data-target="#fileQuestion3">
+							<b><u>How many files can I upload at one time?</u></b>
+						</div>
+
+						<div id="fileQuestion3" class="collapse out"> 
+							There is no file size or quantity limit. 
+						</div>
+						<hr />
+
+						<div data-toggle="collapse" data-target="#fileQuestion4">
+							<b><u>What extractors/instruments are currently supported?</u></b>
+						</div>
+
+						<div id="fileQuestion4" class="collapse out"> 
+							We currently support SEM and TEM instruments, Optical Microscopes, <br />
+							Atomic Force Microscopes, and Xray. 
+						</div>
+						<hr />
+
+						<div data-toggle="collapse" data-target="#select-upload-files">
+							<b><u>Uploading files</u></b>
+						</div>
+						<div id="select-upload-files" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>					
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Uploading files" data-html="true" data-trigger="hover" data-content="1. Browse or drag and drop your files. <br /> 2. (Optional) Add additional file level meta data. <br /> 3. Click submit.<br /><br /> <i> A dataset is selected.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/file_upload.png" class="img-responsive"></p>
+						</div>	
+
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div><!-- container --> 
+	<div class="container">
+		<h3>4CeeD Curator FAQ</h3>
+		<div class="panel-group" id="accordionC" role="tablist" aria-multiselectable="true">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingOneC">
+					<h4 class="panel-title">
+						<a role="button" data-toggle="collapse" data-parent="#accordionC" href="#collapseOneC" aria-expanded="true" aria-controls="collapseOneC">OverView</a>
+					</h4>
+				</div>
+				<div id="collapseOneC" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneC">
+					<div class="panel-body">
+						<p><b>What is this?</b><br />
+							The 4CeeD Curator is a  web tool used to organize and manage scientific data files and metadata.
+						</p>
+
+						<p><b>Why use this? </b><br />
+							The 4CeeD Curator replaces outdated and inefficient methodologies used in many laboratories for data capture, storage, and organization.</p>		   
+						<p><b>How can the 4CeeD Curator help me?</b><br />
+						<ul>
+							<li>All accessible data can be downloaded with its data-model hierarchy preserved. </li>
+							<li>Extractors pull descriptive metadata out of files and instrument logs for analysis and discovery. </li>
+							<li>Get reliable calibration data and how to reference it. </li>
+							<li>Share and search your data and use powerful free-text and faceted search for comparisons. </li>
+							<li>Broad set of customizable access control rules. </li>
+						</ul>					
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingTwoC">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionC" href="#collapseTwoC" aria-expanded="false" aria-controls="collapseTwoC">
+							Spaces
+						</a>
+					</h4>
+				</div>
+				<div id="collapseTwoC" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwoC">
+					<div class="panel-body">
+
+						<div data-toggle="collapse" data-target="#collectionC">
+							<b><u>What’s a space?</u></b>
+						</div>
+						<div id="collectionC" class="collapse out"> 
+							Spaces are used to share collections and datasets with other users. 
+						</div>
+						<hr />
+						<div data-toggle="collapse" data-target="#create-new-space">
+							<b><u>Create a new space</u></b>
+						</div>
+						<div id="create-new-space" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Create a new space" data-html="true" data-trigger="hover" data-content="1. Go to the create spaces page.<br />2. Choose a name for your space.<br /> 3. Give your space a description.<br /> 4. Click Create. <br />" title="">More Info</a></span></p>
+							<p><img src="images/space.png" class="img-responsive"></p>
+							<hr />
+							<p><img src="images/create_space.png" class="img-responsive"></p>
+
+						</div>	 
+						<hr />						
+						<div data-toggle="collapse" data-target="#collection-newC">
+							<b><u>Add users to a space</u></b>
+						</div>
+						<div id="collection-newC" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Select an existing collection" data-html="true" data-trigger="hover" data-content="1. Select a root or sub collection<br />2. (Optional) Enter text to search for collections. <br />3. (Optional) Create a new sub collection by right clicking the parent. <br /><br /> <i> A parent collection is selected or a new sub collection is created and selected.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/existing_collection.png" class="img-responsive"></p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThreeC">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionC" href="#collapseThreeC" aria-expanded="false" aria-controls="collapseThreeC">
+							Datasets
+						</a>
+					</h4>
+				</div>
+				<div id="collapseThreeC" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeC">
+					<div class="panel-body">
+
+						<div data-toggle="collapse" data-target="#datasetC">
+							<b><u>What’s a dataset?</u></b>
+						</div>
+
+						<div id="datasetC" class="collapse out"> 
+							A dataset is a term used to describe a group of related files that have metadata. 
+						</div>
+						<hr />
+						<div data-toggle="collapse" data-target="#select-datasetC">
+							<b><u>Select an existing dataset</u></b>
+						</div>
+						<div id="select-datasetC" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>					
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Select an existing dataset" data-html="true" data-trigger="hover" data-content="1. Select an available dataset from the dropdown menu. <br /><br /> <i> A dataset is selected.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/existing_datasets.png" class="img-responsive"></p>
+						</div>	
+						<hr />
+						<div data-toggle="collapse" data-target="#basic-datasetC">
+							<b><u>Create a basic dataset</u></b>
+						</div>
+						<div id="basic-datasetC" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Create a basic dataset" data-html="true" data-trigger="hover" data-content="1. Give your dataset a name. <br />2. Enter your meta data in the dataset description.<br />3. Click the create dataset button.<br /><br /> <i> A new dataset is created.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/new_dataset.png" class="img-responsive"></p>
+						</div>	
+						<hr />
+						<div data-toggle="collapse" data-target="#create-datasetC">
+							<b><u>Create a dataset from a template</u></b>
+						</div>
+						<div id="create-datasetC" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Create a dataset from a template" data-html="true" data-trigger="hover" data-content="1. Select a template from the dropdown menu. <br />2. Give your dataset a name.<br /> 3. Enter values for your datasets labels. <br />4. Click the create dataset button.<br /> 5. (Optional) Add or remove additional key/value pairs to extend your dataset template. <br /><br /> <i> A new dataset is created from your templates key/value data.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/load_template.png" class="img-responsive"></p>
+						</div>						
+						<hr />
+						<div data-toggle="collapse" data-target="#create-templateC">
+							<b><u>Create a new template</u></b>
+						</div>
+						<div id="create-templateC" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Create a template" data-html="true" data-trigger="hover" data-content="1. (Optional) Use an existing template to design your new template. <br />2. Give your template a name.<br />3. Add new fields to your template. <br /> 4. Click create template button. <br /> 5. (Future) Assign default values and measurement types<br /><br /><i> A new dataset template is created.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/create_template.png" class="img-responsive"></p>
+						</div>	
+						<hr />
+						<div data-toggle="collapse" data-target="#previous-datasetC">
+							<b><u>Load a previous dataset</u></b>
+						</div>
+						<div id="previous-datasetC" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Load a previous dataset" data-html="true" data-trigger="hover" data-content="1. Use a previous dataset to build a new dataset. <br />2. Give your new dataset a name.<br />3. Optionally add new fields to your template. <br /> 4. Click create dataset button. <br /><i> A new dataset template is created.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/previous_dataset.png" class="img-responsive"></p>
+						</div>					
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingFilesC">
+					<h4 class="panel-title">
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFilesC" aria-expanded="false" aria-controls="collapseFilesC">
+							Files
+						</a>
+					</h4>
+				</div>
+				<div id="collapseFilesC" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFilesC">
+					<div class="panel-body">
+
+						<div data-toggle="collapse" data-target="#fileQuestion1C">
+							<b><u>What file types can I upload?</u></b>
+						</div>
+
+						<div id="fileQuestion1C" class="collapse out"> 
+							All major file types are supported, but metadata extractors will only run on supported file types<br />
+							For example, [.png, .dm3, .tif, .txt, .jpg]
+						</div>
+						<hr />
+
+						<div data-toggle="collapse" data-target="#fileQuestion2C">
+							<b><u>What are file extractors?</u></b>
+						</div>
+
+						<div id="fileQuestion2C" class="collapse out"> 
+							File extractors work by extracting key and value pairs from supported file types. This information is indexed, archived, and available for download and search.<br />
+						</div>
+						<hr />
+
+						<div data-toggle="collapse" data-target="#fileQuestion3C">
+							<b><u>How many files can I upload at one time?</u></b>
+						</div>
+
+						<div id="fileQuestion3C" class="collapse out"> 
+							There is no file size or quantity limit. 
+						</div>
+						<hr />
+
+						<div data-toggle="collapse" data-target="#fileQuestion4C">
+							<b><u>What extractors/instruments are currently supported?</u></b>
+						</div>
+
+						<div id="fileQuestion4C" class="collapse out"> 
+							We currently support SEM and TEM instruments, Optical Microscopes, <br />
+							Atomic Force Microscopes, and Xray. 
+						</div>
+						<hr />
+
+						<div data-toggle="collapse" data-target="#select-upload-filesC">
+							<b><u>Uploading files</u></b>
+						</div>
+						<div id="select-upload-filesC" class="collapse out"> 
+							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>					
+							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Uploading files" data-html="true" data-trigger="hover" data-content="1. Browse or drag and drop your files. <br /> 2. (Optional) Add additional file level meta data. <br /> 3. Click submit.<br /><br /> <i> A dataset is selected.</i>" title=" ">More Info</a></span></p>
+							<p><img src="images/file_upload.png" class="img-responsive"></p>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="jquery/js/jquery.min.js"></script>
+	<script src="jquery-ui/js/jquery-ui.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('[data-toggle="popover"]').popover(); 
+		}); 
+	</script>	
+
+	</body>
+</html>
