@@ -109,7 +109,6 @@
 							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Select an existing collection" data-html="true" data-trigger="hover" data-content="1. Select a root or sub collection<br />2. (Optional) Enter text to search for collections. <br />3. (Optional) Create a new sub collection by right clicking the parent. <br /><br /> <i> A parent collection is selected or a new sub collection is created and selected.</i>" title=" ">More Info</a></span></p>
 							<p><img src="images/existing_collection.png" class="img-responsive"></p>
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -294,11 +293,14 @@
 							<b><u>Create a new space</u></b>
 						</div>
 						<div id="create-new-space" class="collapse out"> 
-							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
-							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Create a new space" data-html="true" data-trigger="hover" data-content="1. Go to the create spaces page.<br />2. Choose a name for your space.<br /> 3. Give your space a description.<br /> 4. Click Create. <br />" title="">More Info</a></span></p>
-							<p><img src="images/space.png" class="img-responsive"><br />
+
+							<div class="jumbotron"><img src="images/space.png" class="img-responsive"></div>
+							<p>1. Go to the create spaces page.</p>
+
 							<hr />
-							<img src="images/create_space.png" class="img-responsive"></p>
+							<div class="jumbotron"><img src="images/create_space.png" class="img-responsive"></p></div>
+							<p>2. Choose a name for your space.<br /> 3. Give your space a description.<br /> 4. Click Create. </p>							
+
 						</div>	 
 						<hr />
 
@@ -306,12 +308,12 @@
 							<b><u>Add users to a space</u></b>
 						</div>
 						<div id="collection-newC" class="collapse out"> 
-							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
-							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Select an existing collection" data-html="true" data-trigger="hover" data-content="1. Select manage users<br />2. Add user to a role by entering netid or  start typing for auto suggestions.<br />3. Click submit to confirm addition.<br /> 4. Optionaly invite a non 4CeeD user to create an account and access the space. <br /><br /> <i> A user is added to a space and sent an email.</i>" title=" ">More Info</a></span></p>
-							<p><img src="images/manage_space.png" class="img-responsive"><br />
+							<div class="jumbotron"><p><img src="images/manage_space.png" class="img-responsive"><br /></div>
+							<p>1. Select manage users</p>
 							<hr />
-							<img src="images/manage_space_user.png" class="img-responsive"></p>
-						
+							<div class="jumbotron"><img src="images/manage_space_user.png" class="img-responsive"></p></div>
+							<p>2. Add user to a role by entering the NetID or start typing for auto suggestions.<br />3. Click submit to confirm addition.<br /> 4. Optionally invite a non 4CeeD user to create an account and access the space. </p>
+							<i> A user is added to a space and sent an email.</i>
 						</div>
 						<hr />	
 											
@@ -319,24 +321,176 @@
 							<b><u>Add a dataset or collection to a space </u></b>
 						</div>
 						<div id="space-dataset" class="collapse out"> 
-							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
-							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Select an existing collection" data-html="true" data-trigger="hover" data-content="1. Select a collection or dataset <br />2. Select a space to add the collection or dataset to. <br /><br /> <i> A user is added to a space and sent an email.</i>" title=" ">More Info</a></span></p>
-							<p><img src="images/add_to_space.png" class="img-responsive"><br />
+							<div class="jumbotron"><img src="images/add_to_space.png" class="img-responsive"></div>
+							<p>1. Select a collection or dataset and then choose a space to add it to.</p>
 							<hr />
-							<img src="images/added_to_space.png" class="img-responsive"></p>
-						
+							<div class="jumbotron"><img src="images/added_to_space.png" class="img-responsive"></p></div>
+							<p>2. A new icon will show what has been shared. Click x to remove the collection/dataset from that space.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-<!-- 			<div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingThreeC">
+			<div class="panel panel-default">
+				<div class="panel-heading" role="tab" id="headingThreeE">
 					<h4 class="panel-title">
-						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionC" href="#collapseThreeC" aria-expanded="false" aria-controls="collapseThreeC">
-							Datasets
+						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionE" href="#collapseThreeE" aria-expanded="false" aria-controls="collapseThreeE">
+							Collections
 						</a>
 					</h4>
 				</div>
+				<div id="collapseThreeE" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeE">
+					<div class="panel-body">
+
+						<div data-toggle="collapse" data-target="#datasetG">
+							<b><u>What’s a collection?</u></b>
+						</div>
+
+						<div id="datasetG" class="collapse out"> 
+							A collection is a term used to describe a group of datasets. Collections are often named after a sample, project, or process.		
+						</div>
+						<hr />
+						<div data-toggle="collapse" data-target="#select-datasetH">
+							<b><u>Create a collection</u></b>
+						</div>
+						<div id="select-datasetH" class="collapse out"> 
+
+							<div class="jumbotron"><img src="images/4ceed_curator_collection.png" class="img-responsive"></div>
+							<p>1. Click either link to create a new collection.</p>
+
+							<hr />
+							<div class="jumbotron"><img src="images/4ceed_curator_new_collection.png" class="img-responsive"></div>
+							<p>1. Give a name to your new collection.<br />
+							3. Optionally give your collection a description.<br />
+							4. Optionally share the new collection in an existing space.<br />
+							5. Click create or reset.</p>
+							<p> <i> A collection is created.</i></p>			
+						</div>	
+						<hr />
+						<div data-toggle="collapse" data-target="#select-datasetJ">
+							<b><u>Create a child collection</u></b>
+						</div>
+						<div id="select-datasetJ" class="collapse out"> 
+							<div class="jumbotron">
+
+							<img src="images/4ceed_curator_new_child_collection_2.png" class="img-responsive"></div>
+							<b>From an existing collection.</b><br />
+
+							<p>1. Click the create child collection link.<br />
+							2. View what parent collections the selected collection is in.<br />
+							</p>
+							<hr />
+							<div class="jumbotron"><img src="images/4ceed_curator_new_child_collection.png" class="img-responsive"></div>
+
+							<p>1. Give your child collection a name. <br />
+							2. Provide a description.<br />
+							3. Click create or reset.</p>
+						</div>	
+						<hr />
+						<div data-toggle="collapse" data-target="#select-datasetK">
+							<b><u>View a collection</u></b>
+						</div>
+
+						<div id="select-datasetK" class="collapse out"> 
+
+							<div class="jumbotron"><img src="images/4ceed_curator_my_collections.png" class="img-responsive"></div>
+							<p>
+							1. Select the My Collections tab from the dashboard to view latest collections. <br />
+							2. View collections that you have created.<br />
+							3. View collections that you are collaborating on.<br />
+							4. View all collections.</p>
+							</p>
+
+							<hr />						
+							<div class="jumbotron"><img src="images/4ceed_curator_my_collections_2.png" class="img-responsive"></div>
+							<p>
+							1. View or update collection name.<br />
+							2. View or update collection description.<br />
+							3. Download all datasets and files in a collection.<br />
+							4. Create a child collection.<br />
+							5. View spaces that the collection belongs to. <br />
+							6. View what parent collections this collection belongs to.<br />
+							7. View what datasets are in the collection. 
+							</p>
+							<hr />
+						</div>							
+
+				</div>	
+			</div>	
+		</div>		
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThreeD">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionD" href="#collapseThreeD" aria-expanded="false" aria-controls="collapseThreeD">
+						Datasets
+					</a>
+				</h4>
+			</div>
+			<div id="collapseThreeD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeD">
+				<div class="panel-body">
+					<div data-toggle="collapse" data-target="#datasetD">
+						<b><u>What’s a dataset?</u></b>
+					</div>
+					<div id="datasetD" class="collapse out"> 
+						A dataset is a term used to describe a group of related files that have metadata. 
+					</div>
+					<hr />
+					<div data-toggle="collapse" data-target="#select-datasetD">
+						<b><u>Create a dataset</u></b>
+					</div>
+					<div id="select-datasetD" class="collapse out"> 
+
+						<div class="jumbotron"><img src="images/4ceed_curator_dataset_create.png" class="img-responsive"></div>
+						<p>1. Click either link to create a new dataset</p>
+
+						<hr />
+						<div class="jumbotron"><img src="images/4ceed_curator_dataset_new.png" class="img-responsive"></div>
+						<p>2. Give your dataset a name.<br />
+						3. Optionally give your dataset a description.<br />
+						4. Optionally share the new dataset in an existing space.<br />
+						5. Click create or reset.</p>
+						<p> <i> A dataset is created.</i></p>			
+					</div>	
+					<hr />
+					<div data-toggle="collapse" data-target="#select-datasetE">
+						<b><u>View dataset</u></b>
+					</div>
+					<div id="select-datasetE" class="collapse out"> 
+						<div class="jumbotron"><img src="images/4ceed_curator_datasets_dashboard.png" class="img-responsive"></div>
+						<p>1. View latest datasets from the dashboard.<br />
+						2. View datasets that you have created.<br />
+						3. View datasets that you are collaborating on.<br />
+						4. View all datasets.</p>
+						<hr />
+						<b><u>Individual datasets</u></b>
+						<div class="jumbotron"><img src="images/4ceed_curator_dataset_view.png" class="img-responsive"></div>
+						<p>1. Add files to a dataset, download or delete a dataset, follow a dataset, or view who the collaborators are. <br />
+						2. View thumbnail of files in dataset.<br />
+						3. View the metadata entered by the user from a template.<br />
+						4. Manage what collections the dataset is in.<br />
+						5. Manage what space the dataset is in.<br />
+						6. Create tags for the dataset for better search.<br />
+						7. Download a file. </p>
+					</div>	
+					<hr />
+					<div data-toggle="collapse" data-target="#select-datasetF">
+						<b><u>View dataset metadata</u></b>
+					</div>
+
+					<div id="select-datasetF" class="collapse out"> 
+						<div class="jumbotron"><img src="images/4ceed_curator_dataset_metadata.png" class="img-responsive"></div>
+						<p>
+						1. Select the Metadata tab to view all of the user defined metadata. <br />
+						2. List of key values entered from a 4CeeD Uploader template.<br />
+						3. Dataset files can be downloaded if the user is the creator or has been given permission.<br />
+						3. 4CeeD uses the Library of Congress BagIt Spec which preserves the experiments hierarchy and provides the user all the original files, user defined metadata, and extracted metadata in its original file hierachy. 
+						</p>
+						<hr />
+					</div>							
+				</div>	
+			</div>
+		</div>	
+
+<!-- 				
 				<div id="collapseThreeC" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeC">
 					<div class="panel-body">
 
@@ -469,6 +623,15 @@
 			$('[data-toggle="popover"]').popover(); 
 		}); 
 	</script>	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+	  ga('create', 'UA-85306000-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 	</body>
 </html>
