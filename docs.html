@@ -195,7 +195,7 @@
 
 						<div id="fileQuestion1" class="collapse out"> 
 							All major file types are supported, but metadata extractors will only run on supported file types<br />
-							For example, [.png, .dm3, .tif, .txt, .jpg]
+							For example, [.png, .dm3, .tif, .txt, .jpg, .ibw]
 						</div>
 						<hr />
 
@@ -213,7 +213,7 @@
 						</div>
 
 						<div id="fileQuestion3" class="collapse out"> 
-							There is no file size or quantity limit. 
+						There is no file size or quantity limit. It is recommended to upload smaller batches of files. 
 						</div>
 						<hr />
 
@@ -235,8 +235,6 @@
 							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Uploading files" data-html="true" data-trigger="hover" data-content="1. Browse or drag and drop your files. <br /> 2. (Optional) Add additional file level meta data. <br /> 3. Click submit.<br /><br /> <i> Files are uploaded.</i>" title=" ">More Info</a></span></p>
 							<p><img src="images/file_upload.png" class="img-responsive"></p>
 						</div>	
-
-
 					</div>
 				</div>
 			</div>
@@ -300,7 +298,6 @@
 							<hr />
 							<div class="jumbotron"><img src="images/create_space.png" class="img-responsive"></p></div>
 							<p>2. Choose a name for your space.<br /> 3. Give your space a description.<br /> 4. Click Create. </p>							
-
 						</div>	 
 						<hr />
 
@@ -488,128 +485,298 @@
 					</div>							
 				</div>	
 			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingFilesC">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionFilesC" href="#collapseFilesC" aria-expanded="false" aria-controls="collapseFilesC">
+						Files
+					</a>
+				</h4>
+			</div>
+			<div id="collapseFilesC" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFilesC">
+				<div class="panel-body">
+					<div data-toggle="collapse" data-target="#fileQuestion1C">
+						<b><u>What file types can I upload?</u></b>
+					</div>
+
+					<div id="fileQuestion1C" class="collapse out"> 
+						All major file types are supported, but metadata extractors will only run on supported file types<br />
+						For example, [.png, .dm3, .tif, .txt, .jpg, .ibw]
+					</div>
+					<hr />
+
+					<div data-toggle="collapse" data-target="#fileQuestion2C">
+						<b><u>What are file extractors?</u></b>
+					</div>
+
+					<div id="fileQuestion2C" class="collapse out"> 
+						File extractors work by extracting key and value pairs from supported file types. This information is indexed, archived, and available for download and search.<br />
+					</div>
+					<hr />
+
+					<div data-toggle="collapse" data-target="#fileQuestion3C">
+						<b><u>How many files can I upload at one time?</u></b>
+					</div>
+
+					<div id="fileQuestion3C" class="collapse out"> 
+						There is no file size or quantity limit. It is recommended to upload smaller batches of files. 
+					</div>
+					<hr />
+
+					<div data-toggle="collapse" data-target="#fileQuestion4C">
+						<b><u>What extractors/instruments are currently supported?</u></b>
+					</div>
+
+					<div id="fileQuestion4C" class="collapse out"> 
+						We currently support SEM and TEM instruments, Optical Microscopes, <br />
+						Atomic Force Microscopes, and Xray. 
+					</div>
+					<hr />
+
+					<div data-toggle="collapse" data-target="#select-upload-filesC">
+						<b><u>Uploading files</u></b>
+					</div>
+
+					<div id="select-upload-filesC" class="collapse out"> 
+						<div class="jumbotron">
+							<img src="images/4ceed_curator_file_upload.png" class="img-responsive">
+						</div>
+						<p>
+						<b>* If you are in a lab it's strongly suggested to use the streamlined 4CeeD Uploader. The 4CeeD Uploader supports metadata templates for quick and accurate metadata capture.</b>
+						</p>
+						<p>
+						1. View information about the dataset that files are to be uploaded to. <br />
+						2. Select or drag files to upload.<br />
+						3. Start or cancel upload.<br />
+						</p>
+					</div>
+					<hr />
+
+					<div data-toggle="collapse" data-target="#select-fileC">
+						<b><u>View file and metadata</u></b>
+					</div>
+
+					<div id="select-fileC" class="collapse out"> 
+						<div class="jumbotron">
+							<img src="images/4ceed_curator_file_upload.png" class="img-responsive">
+						</div>
+						<p>
+						<b>* If you are in a lab it's strongly suggested to use the streamlined 4CeeD Uploader. The 4CeeD Uploader supports metadata templates for quick and accurate metadata capture.</b>
+						</p>
+						<p>
+						1. View information about the dataset that files are to be uploaded to. <br />
+						2. Select or drag files to upload.<br />
+						3. Start or cancel upload.<br />
+						</p>
+					</div>	
+					<hr />
+
+					<div data-toggle="collapse" data-target="#select-fileTag">
+						<b><u>Tag file preview</u></b>
+					</div>
+
+					<div id="select-fileTag" class="collapse out"> 
+						<div class="jumbotron">
+							<img src="images/4ceed_curator_file_upload.png" class="img-responsive">
+						</div>
+						<p>
+						<b>* If you are in a lab it's strongly suggested to use the streamlined 4CeeD Uploader. The 4CeeD Uploader supports metadata templates for quick and accurate metadata capture.</b>
+						</p>
+						<p>
+						1. View information about the dataset that files are to be uploaded to. <br />
+						2. Select or drag files to upload.<br />
+						3. Start or cancel upload.<br />
+						</p>
+					</div>	
+					<hr />
+
+					<div data-toggle="collapse" data-target="#select-extractionC">
+						<b><u>View extraction events</u></b>
+					</div>
+
+					<div id="select-extractionC" class="collapse out"> 
+						<div class="jumbotron">
+							<img src="images/4ceed_curator_file_upload.png" class="img-responsive">
+						</div>
+						<p>
+						<b>* If you are in a lab it's strongly suggested to use the streamlined 4CeeD Uploader. The 4CeeD Uploader supports metadata templates for quick and accurate metadata capture.</b>
+						</p>
+						<p>
+						1. View information about the dataset that files are to be uploaded to. <br />
+						2. Select or drag files to upload.<br />
+						3. Start or cancel upload.<br />
+						</p>
+					</div>	
+					<hr />
+
+					<div data-toggle="collapse" data-target="#select-manualC">
+						<b><u>Manually submit file for extraction</u></b>
+					</div>
+
+					<div id="select-manualC" class="collapse out"> 
+						<div class="jumbotron">
+							<img src="images/4ceed_curator_file_upload.png" class="img-responsive">
+						</div>
+						<p>
+						<b>* If you are in a lab it's strongly suggested to use the streamlined 4CeeD Uploader. The 4CeeD Uploader supports metadata templates for quick and accurate metadata capture.</b>
+						</p>
+						<p>
+						1. View information about the dataset that files are to be uploaded to. <br />
+						2. Select or drag files to upload.<br />
+						3. Start or cancel upload.<br />
+						</p>
+					</div>
+					<hr />
+				</div>	
+			</div>
+		</div>	
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThreeD">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionD" href="#collapseThreeD" aria-expanded="false" aria-controls="collapseThreeD">
+						Templates
+					</a>
+				</h4>
+			</div>
+			<div id="collapseThreeD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeD">
+				<div class="panel-body">
+					<div data-toggle="collapse" data-target="#datasetD">
+						<b><u>What’s a dataset?</u></b>
+					</div>
+					<div id="datasetD" class="collapse out"> 
+						A dataset is a term used to describe a group of related files that have metadata. 
+					</div>
+					<hr />
+					<div data-toggle="collapse" data-target="#select-datasetD">
+						<b><u>Create a dataset</u></b>
+					</div>
+					<div id="select-datasetD" class="collapse out"> 
+
+						<div class="jumbotron"><img src="images/4ceed_curator_dataset_create.png" class="img-responsive"></div>
+						<p>1. Click either link to create a new dataset</p>
+
+						<hr />
+						<div class="jumbotron"><img src="images/4ceed_curator_dataset_new.png" class="img-responsive"></div>
+						<p>2. Give your dataset a name.<br />
+						3. Optionally give your dataset a description.<br />
+						4. Optionally share the new dataset in an existing space.<br />
+						5. Click create or reset.</p>
+						<p> <i> A dataset is created.</i></p>			
+					</div>	
+					<hr />
+					<div data-toggle="collapse" data-target="#select-datasetE">
+						<b><u>View dataset</u></b>
+					</div>
+					<div id="select-datasetE" class="collapse out"> 
+						<div class="jumbotron"><img src="images/4ceed_curator_datasets_dashboard.png" class="img-responsive"></div>
+						<p>1. View latest datasets from the dashboard.<br />
+						2. View datasets that you have created.<br />
+						3. View datasets that you are collaborating on.<br />
+						4. View all datasets.</p>
+						<hr />
+						<b><u>Individual datasets</u></b>
+						<div class="jumbotron"><img src="images/4ceed_curator_dataset_view.png" class="img-responsive"></div>
+						<p>1. Add files to a dataset, download or delete a dataset, follow a dataset, or view who the collaborators are. <br />
+						2. View thumbnail of files in dataset.<br />
+						3. View the metadata entered by the user from a template.<br />
+						4. Manage what collections the dataset is in.<br />
+						5. Manage what space the dataset is in.<br />
+						6. Create tags for the dataset for better search.<br />
+						7. Download a file. </p>
+					</div>	
+					<hr />
+					<div data-toggle="collapse" data-target="#select-datasetF">
+						<b><u>View dataset metadata</u></b>
+					</div>
+
+					<div id="select-datasetF" class="collapse out"> 
+						<div class="jumbotron"><img src="images/4ceed_curator_dataset_metadata.png" class="img-responsive"></div>
+						<p>
+						1. Select the Metadata tab to view all of the user defined metadata. <br />
+						2. List of key values entered from a 4CeeD Uploader template.<br />
+						3. Dataset files can be downloaded if the user is the creator or has been given permission.<br />
+						3. 4CeeD uses the Library of Congress BagIt Spec which preserves the experiments hierarchy and provides the user all the original files, user defined metadata, and extracted metadata in its original file hierachy. 
+						</p>
+						<hr />
+					</div>							
+				</div>	
+			</div>
+		</div>	
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThreeD">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionD" href="#collapseThreeD" aria-expanded="false" aria-controls="collapseThreeD">
+						Admin
+					</a>
+				</h4>
+			</div>
+			<div id="collapseThreeD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeD">
+				<div class="panel-body">
+					<div data-toggle="collapse" data-target="#datasetD">
+						<b><u>What’s a dataset?</u></b>
+					</div>
+					<div id="datasetD" class="collapse out"> 
+						A dataset is a term used to describe a group of related files that have metadata. 
+					</div>
+					<hr />
+					<div data-toggle="collapse" data-target="#select-datasetD">
+						<b><u>Create a dataset</u></b>
+					</div>
+					<div id="select-datasetD" class="collapse out"> 
+
+						<div class="jumbotron"><img src="images/4ceed_curator_dataset_create.png" class="img-responsive"></div>
+						<p>1. Click either link to create a new dataset</p>
+
+						<hr />
+						<div class="jumbotron"><img src="images/4ceed_curator_dataset_new.png" class="img-responsive"></div>
+						<p>2. Give your dataset a name.<br />
+						3. Optionally give your dataset a description.<br />
+						4. Optionally share the new dataset in an existing space.<br />
+						5. Click create or reset.</p>
+						<p> <i> A dataset is created.</i></p>			
+					</div>	
+					<hr />
+					<div data-toggle="collapse" data-target="#select-datasetE">
+						<b><u>View dataset</u></b>
+					</div>
+					<div id="select-datasetE" class="collapse out"> 
+						<div class="jumbotron"><img src="images/4ceed_curator_datasets_dashboard.png" class="img-responsive"></div>
+						<p>1. View latest datasets from the dashboard.<br />
+						2. View datasets that you have created.<br />
+						3. View datasets that you are collaborating on.<br />
+						4. View all datasets.</p>
+						<hr />
+						<b><u>Individual datasets</u></b>
+						<div class="jumbotron"><img src="images/4ceed_curator_dataset_view.png" class="img-responsive"></div>
+						<p>1. Add files to a dataset, download or delete a dataset, follow a dataset, or view who the collaborators are. <br />
+						2. View thumbnail of files in dataset.<br />
+						3. View the metadata entered by the user from a template.<br />
+						4. Manage what collections the dataset is in.<br />
+						5. Manage what space the dataset is in.<br />
+						6. Create tags for the dataset for better search.<br />
+						7. Download a file. </p>
+					</div>	
+					<hr />
+					<div data-toggle="collapse" data-target="#select-datasetF">
+						<b><u>View dataset metadata</u></b>
+					</div>
+
+					<div id="select-datasetF" class="collapse out"> 
+						<div class="jumbotron"><img src="images/4ceed_curator_dataset_metadata.png" class="img-responsive"></div>
+						<p>
+						1. Select the Metadata tab to view all of the user defined metadata. <br />
+						2. List of key values entered from a 4CeeD Uploader template.<br />
+						3. Dataset files can be downloaded if the user is the creator or has been given permission.<br />
+						3. 4CeeD uses the Library of Congress BagIt Spec which preserves the experiments hierarchy and provides the user all the original files, user defined metadata, and extracted metadata in its original file hierachy. 
+						</p>
+						<hr />
+					</div>							
+				</div>	
+			</div>
 		</div>	
 
-<!-- 				
-				<div id="collapseThreeC" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeC">
-					<div class="panel-body">
 
-						<div data-toggle="collapse" data-target="#datasetC">
-							<b><u>What’s a dataset?</u></b>
-						</div>
-
-						<div id="datasetC" class="collapse out"> 
-							A dataset is a term used to describe a group of related files that have metadata. 
-						</div>
-						<hr />
-						<div data-toggle="collapse" data-target="#select-datasetC">
-							<b><u>Select an existing dataset</u></b>
-						</div>
-						<div id="select-datasetC" class="collapse out"> 
-							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>					
-							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Select an existing dataset" data-html="true" data-trigger="hover" data-content="1. Select an available dataset from the dropdown menu. <br /><br /> <i> A dataset is selected.</i>" title=" ">More Info</a></span></p>
-							<p><img src="images/existing_datasets.png" class="img-responsive"></p>
-						</div>	
-						<hr />
-						<div data-toggle="collapse" data-target="#basic-datasetC">
-							<b><u>Create a basic dataset</u></b>
-						</div>
-						<div id="basic-datasetC" class="collapse out"> 
-							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
-							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Create a basic dataset" data-html="true" data-trigger="hover" data-content="1. Give your dataset a name. <br />2. Enter your meta data in the dataset description.<br />3. Click the create dataset button.<br /><br /> <i> A new dataset is created.</i>" title=" ">More Info</a></span></p>
-							<p><img src="images/new_dataset.png" class="img-responsive"></p>
-						</div>	
-						<hr />
-						<div data-toggle="collapse" data-target="#create-datasetC">
-							<b><u>Create a dataset from a template</u></b>
-						</div>
-						<div id="create-datasetC" class="collapse out"> 
-							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
-							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Create a dataset from a template" data-html="true" data-trigger="hover" data-content="1. Select a template from the dropdown menu. <br />2. Give your dataset a name.<br /> 3. Enter values for your datasets labels. <br />4. Click the create dataset button.<br /> 5. (Optional) Add or remove additional key/value pairs to extend your dataset template. <br /><br /> <i> A new dataset is created from your templates key/value data.</i>" title=" ">More Info</a></span></p>
-							<p><img src="images/load_template.png" class="img-responsive"></p>
-						</div>						
-						<hr />
-						<div data-toggle="collapse" data-target="#create-templateC">
-							<b><u>Create a new template</u></b>
-						</div>
-						<div id="create-templateC" class="collapse out"> 
-							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
-							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Create a template" data-html="true" data-trigger="hover" data-content="1. (Optional) Use an existing template to design your new template. <br />2. Give your template a name.<br />3. Add new fields to your template. <br /> 4. Click create template button. <br /> 5. (Future) Assign default values and measurement types<br /><br /><i> A new dataset template is created.</i>" title=" ">More Info</a></span></p>
-							<p><img src="images/create_template.png" class="img-responsive"></p>
-						</div>	
-						<hr />
-						<div data-toggle="collapse" data-target="#previous-datasetC">
-							<b><u>Load a previous dataset</u></b>
-						</div>
-						<div id="previous-datasetC" class="collapse out"> 
-							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>										
-							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Load a previous dataset" data-html="true" data-trigger="hover" data-content="1. Use a previous dataset to build a new dataset. <br />2. Give your new dataset a name.<br />3. Optionally add new fields to your template. <br /> 4. Click create dataset button. <br /><i> A new dataset template is created.</i>" title=" ">More Info</a></span></p>
-							<p><img src="images/previous_dataset.png" class="img-responsive"></p>
-						</div>					
-					</div>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingFilesC">
-					<h4 class="panel-title">
-						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFilesC" aria-expanded="false" aria-controls="collapseFilesC">
-							Files
-						</a>
-					</h4>
-				</div>
-				<div id="collapseFilesC" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFilesC">
-					<div class="panel-body">
-
-						<div data-toggle="collapse" data-target="#fileQuestion1C">
-							<b><u>What file types can I upload?</u></b>
-						</div>
-
-						<div id="fileQuestion1C" class="collapse out"> 
-							All major file types are supported, but metadata extractors will only run on supported file types<br />
-							For example, [.png, .dm3, .tif, .txt, .jpg]
-						</div>
-						<hr />
-
-						<div data-toggle="collapse" data-target="#fileQuestion2C">
-							<b><u>What are file extractors?</u></b>
-						</div>
-
-						<div id="fileQuestion2C" class="collapse out"> 
-							File extractors work by extracting key and value pairs from supported file types. This information is indexed, archived, and available for download and search.<br />
-						</div>
-						<hr />
-
-						<div data-toggle="collapse" data-target="#fileQuestion3C">
-							<b><u>How many files can I upload at one time?</u></b>
-						</div>
-
-						<div id="fileQuestion3C" class="collapse out"> 
-							There is no file size or quantity limit. 
-						</div>
-						<hr />
-
-						<div data-toggle="collapse" data-target="#fileQuestion4C">
-							<b><u>What extractors/instruments are currently supported?</u></b>
-						</div>
-
-						<div id="fileQuestion4C" class="collapse out"> 
-							We currently support SEM and TEM instruments, Optical Microscopes, <br />
-							Atomic Force Microscopes, and Xray. 
-						</div>
-						<hr />
-
-						<div data-toggle="collapse" data-target="#select-upload-filesC">
-							<b><u>Uploading files</u></b>
-						</div>
-						<div id="select-upload-filesC" class="collapse out"> 
-							<p><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>					
-							<span><a style="font-height:12px; color:red;" href="#" data-toggle="popover" title="Uploading files" data-html="true" data-trigger="hover" data-content="1. Browse or drag and drop your files. <br /> 2. (Optional) Add additional file level meta data. <br /> 3. Click submit.<br /><br /> <i> A dataset is selected.</i>" title=" ">More Info</a></span></p>
-							<p><img src="images/file_upload.png" class="img-responsive"></p>
-						</div>	
-					</div> -->
-<!-- 				</div>
- -->			</div>
-		</div>
 	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
