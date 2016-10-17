@@ -632,71 +632,59 @@
 			</div>
 		</div>	
 		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingThreeD">
+			<div class="panel-heading" role="tab" id="headingThreeTemplates">
 				<h4 class="panel-title">
-					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionD" href="#collapseThreeD" aria-expanded="false" aria-controls="collapseThreeD">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionTemplates" href="#collapseThreeTemplates" aria-expanded="false" aria-controls="collapseThreeTemplates">
 						Templates
 					</a>
 				</h4>
 			</div>
-			<div id="collapseThreeD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeD">
+			<div id="collapseThreeTemplates" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeTemplates">
 				<div class="panel-body">
-					<div data-toggle="collapse" data-target="#datasetD">
-						<b><u>What’s a dataset?</u></b>
+					<div data-toggle="collapse" data-target="#templateD">
+						<b><u>What’s a template?</u></b>
 					</div>
-					<div id="datasetD" class="collapse out"> 
-						A dataset is a term used to describe a group of related files that have metadata. 
+					<div id="templateD" class="collapse out"> 
+						Templates provide a set of key value pairs for accurately and quickly reporting user defined metadata.
 					</div>
 					<hr />
-					<div data-toggle="collapse" data-target="#select-datasetD">
-						<b><u>Create a dataset</u></b>
+					<div data-toggle="collapse" data-target="#create-templates">
+						<b><u>Create a template</u></b>
 					</div>
-					<div id="select-datasetD" class="collapse out"> 
+					<div id="create-templates" class="collapse out"> 
 
-						<div class="jumbotron"><img src="images/4ceed_curator_dataset_create.png" class="img-responsive"></div>
-						<p>1. Click either link to create a new dataset</p>
-
-						<hr />
-						<div class="jumbotron"><img src="images/4ceed_curator_dataset_new.png" class="img-responsive"></div>
-						<p>2. Give your dataset a name.<br />
-						3. Optionally give your dataset a description.<br />
-						4. Optionally share the new dataset in an existing space.<br />
-						5. Click create or reset.</p>
-						<p> <i> A dataset is created.</i></p>			
+						<div class="jumbotron"><img src="images/4ceed_curator_new_template.png" class="img-responsive"></div>
+						<p>1. Optionally create your template from another one.<br />
+						2. Give your template a name.<br />
+						3. Optionally give your template tags for later search.<br />
+						4. Add new fields to your template.<br />
+						5. Click the box to share template within a space or globally.<br />
+						6. Enter information for the template.(Name, Unit Type, Data Type, Value, Requirement). Optionally remove rows.</p>
+						<p> <i> A template is created.</i></p>			
 					</div>	
 					<hr />
-					<div data-toggle="collapse" data-target="#select-datasetE">
-						<b><u>View dataset</u></b>
+					<div data-toggle="collapse" data-target="#update-template">
+						<b><u>Update a template</u></b>
 					</div>
-					<div id="select-datasetE" class="collapse out"> 
-						<div class="jumbotron"><img src="images/4ceed_curator_datasets_dashboard.png" class="img-responsive"></div>
-						<p>1. View latest datasets from the dashboard.<br />
-						2. View datasets that you have created.<br />
-						3. View datasets that you are collaborating on.<br />
-						4. View all datasets.</p>
-						<hr />
-						<b><u>Individual datasets</u></b>
-						<div class="jumbotron"><img src="images/4ceed_curator_dataset_view.png" class="img-responsive"></div>
-						<p>1. Add files to a dataset, download or delete a dataset, follow a dataset, or view who the collaborators are. <br />
-						2. View thumbnail of files in dataset.<br />
-						3. View the metadata entered by the user from a template.<br />
-						4. Manage what collections the dataset is in.<br />
-						5. Manage what space the dataset is in.<br />
-						6. Create tags for the dataset for better search.<br />
-						7. Download a file. </p>
+					<div id="update-template" class="collapse out"> 
+						<div class="jumbotron"><img src="images/4ceed_curator_update_template.png" class="img-responsive"></div>
+						<p>1. Choose a template to update. <br />
+						2. Optionally change template name.<br />
+						3. Add or remove tags.<br />
+						4. Add new fields. <br />
+						5. Share template or revoke shared status.<br />
+						6. Remove row or update name, type, or value fields. <br />
 					</div>	
 					<hr />
-					<div data-toggle="collapse" data-target="#select-datasetF">
-						<b><u>View dataset metadata</u></b>
+					<div data-toggle="collapse" data-target="#delete-template">
+						<b><u>Delete template </u></b>
 					</div>
 
-					<div id="select-datasetF" class="collapse out"> 
-						<div class="jumbotron"><img src="images/4ceed_curator_dataset_metadata.png" class="img-responsive"></div>
+					<div id="delete-template" class="collapse out"> 
+						<div class="jumbotron"><img src="images/4ceed_curator_delete_template.png" class="img-responsive"></div>
 						<p>
-						1. Select the Metadata tab to view all of the user defined metadata. <br />
-						2. List of key values entered from a 4CeeD Uploader template.<br />
-						3. Dataset files can be downloaded if the user is the creator or has been given permission.<br />
-						3. 4CeeD uses the Library of Congress BagIt Spec which preserves the experiments hierarchy and provides the user all the original files, user defined metadata, and extracted metadata in its original file hierachy. 
+						1. Select the template to delete <br />
+						2. Click delete this template to remove.<br />
 						</p>
 						<hr />
 					</div>							
@@ -704,74 +692,71 @@
 			</div>
 		</div>	
 		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingThreeD">
+			<div class="panel-heading" role="tab" id="headingThreeAdmin">
 				<h4 class="panel-title">
-					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionD" href="#collapseThreeD" aria-expanded="false" aria-controls="collapseThreeD">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionD" href="#collapseThreeAdmin" aria-expanded="false" aria-controls="collapseThreeAdmin">
 						Admin
 					</a>
 				</h4>
 			</div>
-			<div id="collapseThreeD" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeD">
+			<div id="collapseThreeAdmin" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThreeAdmin">
 				<div class="panel-body">
-					<div data-toggle="collapse" data-target="#datasetD">
-						<b><u>What’s a dataset?</u></b>
+					<div data-toggle="collapse" data-target="#superAdmin">
+						<b><u>Enable admin mode</u></b>
 					</div>
-					<div id="datasetD" class="collapse out"> 
-						A dataset is a term used to describe a group of related files that have metadata. 
+					<div id="superAdmin" class="collapse out"> 
+						In order to activate the 4CeeD admin mode, a system administrator must modify the 4CeeD Curator config file property named initialAdmins. User accounts in this list will have access to the admin menu. 
 					</div>
 					<hr />
-					<div data-toggle="collapse" data-target="#select-datasetD">
-						<b><u>Create a dataset</u></b>
+					<div data-toggle="collapse" data-target="#view-admin">
+						<b><u>View admin menu</u></b>
 					</div>
-					<div id="select-datasetD" class="collapse out"> 
+					<div id="view-admin" class="collapse out"> 
 
-						<div class="jumbotron"><img src="images/4ceed_curator_dataset_create.png" class="img-responsive"></div>
-						<p>1. Click either link to create a new dataset</p>
-
-						<hr />
-						<div class="jumbotron"><img src="images/4ceed_curator_dataset_new.png" class="img-responsive"></div>
-						<p>2. Give your dataset a name.<br />
-						3. Optionally give your dataset a description.<br />
-						4. Optionally share the new dataset in an existing space.<br />
-						5. Click create or reset.</p>
-						<p> <i> A dataset is created.</i></p>			
+						<div class="jumbotron"><img src="images/4ceed_curator_admin_super.png" class="img-responsive"></div>
+						<p>1. Admin users have access to additional menu options.</p>
 					</div>	
 					<hr />
-					<div data-toggle="collapse" data-target="#select-datasetE">
-						<b><u>View dataset</u></b>
+					<div data-toggle="collapse" data-target="#select-admin-users">
+						<b><u>Manage users</u></b>
 					</div>
-					<div id="select-datasetE" class="collapse out"> 
-						<div class="jumbotron"><img src="images/4ceed_curator_datasets_dashboard.png" class="img-responsive"></div>
-						<p>1. View latest datasets from the dashboard.<br />
-						2. View datasets that you have created.<br />
-						3. View datasets that you are collaborating on.<br />
-						4. View all datasets.</p>
-						<hr />
-						<b><u>Individual datasets</u></b>
-						<div class="jumbotron"><img src="images/4ceed_curator_dataset_view.png" class="img-responsive"></div>
-						<p>1. Add files to a dataset, download or delete a dataset, follow a dataset, or view who the collaborators are. <br />
-						2. View thumbnail of files in dataset.<br />
-						3. View the metadata entered by the user from a template.<br />
-						4. Manage what collections the dataset is in.<br />
-						5. Manage what space the dataset is in.<br />
-						6. Create tags for the dataset for better search.<br />
-						7. Download a file. </p>
+					<div id="select-admin-users" class="collapse out"> 
+						<div class="jumbotron"><img src="images/4ceed_curator_admin_users_2.png" class="img-responsive"></div>
+						<p>1. View all users and de-activate or promote users.<br />
+						2. Click submit to commit changes.</p>
 					</div>	
 					<hr />
-					<div data-toggle="collapse" data-target="#select-datasetF">
-						<b><u>View dataset metadata</u></b>
+					<div data-toggle="collapse" data-target="#select-admin-roles">
+						<b><u>Create and manage security roles/groups</u></b>
 					</div>
 
-					<div id="select-datasetF" class="collapse out"> 
-						<div class="jumbotron"><img src="images/4ceed_curator_dataset_metadata.png" class="img-responsive"></div>
+					<div id="select-admin-roles" class="collapse out"> 
+						<div class="jumbotron"><img src="images/4ceed_curator_admin_roles.png" class="img-responsive"></div>
 						<p>
-						1. Select the Metadata tab to view all of the user defined metadata. <br />
-						2. List of key values entered from a 4CeeD Uploader template.<br />
-						3. Dataset files can be downloaded if the user is the creator or has been given permission.<br />
-						3. 4CeeD uses the Library of Congress BagIt Spec which preserves the experiments hierarchy and provides the user all the original files, user defined metadata, and extracted metadata in its original file hierachy. 
+						1. Create a new security group. <br />
+						2. Edit or delete existing security roles.<br />
 						</p>
 						<hr />
-					</div>							
+						<div class="jumbotron"><img src="images/4ceed_curator_admin_roles_2.png" class="img-responsive"></div>
+						<p>
+						1. Create a new role to moderate access to a space.<br />
+						2. Give the new role a name.<br />
+						3. Optionally provide a description of the new role.<br />
+						4.Choose from nearly 50 different security properties<br />
+					</div>	
+					<hr />
+					<div data-toggle="collapse" data-target="#select-admin-theme">
+						<b><u>Customize 4CeeD Curator theme</u></b>
+					</div>
+
+					<div id="select-admin-theme" class="collapse out"> 
+						<div class="jumbotron"><img src="images/4ceed_curator_admin_customize.png" class="img-responsive"></div>
+						<p>
+						1. Customize the look of the curator, add google analytics tracking code, and update branding and other dynamic text. <br />
+
+						</p>
+						<hr />
+					</div>												
 				</div>	
 			</div>
 		</div>	
